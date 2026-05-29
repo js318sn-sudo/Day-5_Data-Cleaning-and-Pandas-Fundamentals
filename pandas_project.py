@@ -1,3 +1,4 @@
+ 
 import pandas as pd
 
 # Sample Dataset
@@ -84,12 +85,12 @@ print(df)
 
 # Output:
 ORIGINAL DATASET
-    Name   Age  Marks         City
-0   Ravi  23.0   85.0    Hyderabad
-1   Sita   NaN   90.0   Vijayawada
-2  Kiran  21.0    NaN         None
-3   Ravi  23.0   85.0    Hyderabad
-4   None  25.0   95.0      Chennai
+    Name   Age  Marks        City
+0   Ravi  23.0   85.0   Hyderabad
+1   Sita   NaN   90.0  Vijayawada
+2  Kiran  21.0    NaN        None
+3   Ravi  23.0   85.0   Hyderabad
+4   None  25.0   95.0     Chennai
 
 DATASET SHAPE
 (5, 4)
@@ -110,12 +111,12 @@ City     1
 dtype: int64
 
 AFTER HANDLING MISSING VALUES
-      Name   Age  Marks         City
-0     Ravi  23.0  85.00    Hyderabad
-1     Sita  23.0  90.00   Vijayawada
-2    Kiran  21.0  88.75      Unknown
-3     Ravi  23.0  85.00    Hyderabad
-4  Unknown  25.0  95.00      Chennai
+      Name   Age  Marks        City
+0     Ravi  23.0  85.00   Hyderabad
+1     Sita  23.0  90.00  Vijayawada
+2    Kiran  21.0  88.75     Unknown
+3     Ravi  23.0  85.00   Hyderabad
+4  Unknown  25.0  95.00     Chennai
 
 STATISTICAL SUMMARY
              Age      Marks
@@ -155,18 +156,19 @@ DUPLICATE RECORDS
 3  Ravi   23     85  Hyderabad
 
 AFTER REMOVING DUPLICATES
-      Name  Age  Marks         City
-0     Ravi   23     85    Hyderabad
-1     Sita   23     90   Vijayawada
-2    Kiran   21     88      Unknown
-4  Unknown   25     95      Chennai
+      Name  Age  Marks        City
+0     Ravi   23     85   Hyderabad
+1     Sita   23     90  Vijayawada
+2    Kiran   21     88     Unknown
+4  Unknown   25     95     Chennai
 
 FINAL DATASET SHAPE
 (4, 4)
 
 FINAL CLEANED DATASET
-      Name  Age  Marks         City
-0     Ravi   23     85    Hyderabad
-1     Sita   23     90   Vijayawada
-2    Kiran   21     88      Unknown
-4  Unknown   25     95      Chennai
+      Name  Age  Marks        City
+0     Ravi   23     85   Hyderabad
+1     Sita   23     90  Vijayawada
+2    Kiran   21     88     Unknown
+4  Unknown   25     95     Chennai
+
