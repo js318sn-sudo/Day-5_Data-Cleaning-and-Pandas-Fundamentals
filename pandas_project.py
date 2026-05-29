@@ -15,29 +15,43 @@ df = pd.DataFrame(data)
 print("ORIGINAL DATASET")
 print(df)
 
+# Display Dataset Shape
+print("\nDATASET SHAPE")
+print(df.shape)
+
 # Check Missing Values
 print("\nMISSING VALUES")
 print(df.isnull())
 
-# Total Missing Values
+# Count Total Missing Values
 print("\nTOTAL MISSING VALUES")
 print(df.isnull().sum())
 
-# Handle Missing Values
+# Replace Missing Values
 df["Name"] = df["Name"].fillna("Unknown")
+
+# Replace missing Age values with mean
 df["Age"] = df["Age"].fillna(df["Age"].mean())
-df["Marks"] = df["Marks"].fillna(0)
+
+# Replace missing Marks values with mean
+df["Marks"] = df["Marks"].fillna(df["Marks"].mean())
+
+# Replace missing City values
 df["City"] = df["City"].fillna("Unknown")
 
 # Display Dataset After Handling Missing Values
 print("\nAFTER HANDLING MISSING VALUES")
 print(df)
 
-# Check Data Types
+# Display Statistical Summary
+print("\nSTATISTICAL SUMMARY")
+print(df.describe())
+
+# Display Data Types Before Conversion
 print("\nDATA TYPES BEFORE CONVERSION")
 print(df.dtypes)
 
-# Convert Data Types
+# Convert float values into integer type
 df["Age"] = df["Age"].astype(int)
 df["Marks"] = df["Marks"].astype(int)
 
@@ -49,6 +63,10 @@ print(df.dtypes)
 print("\nDUPLICATE ROWS")
 print(df.duplicated())
 
+# Display Duplicate Records
+print("\nDUPLICATE RECORDS")
+print(df[df.duplicated()])
+
 # Remove Duplicate Rows
 df = df.drop_duplicates()
 
@@ -56,17 +74,25 @@ df = df.drop_duplicates()
 print("\nAFTER REMOVING DUPLICATES")
 print(df)
 
-# Final Cleaned Dataset
-print("\nFINAL CLEANED DATASET")
-print(df)
+# Display Final Dataset Shape
+print("\nFINAL DATASET SHAPE")
+print(df.shape)
 
-#Output:ORIGINAL DATASET
+# Display Final Cleaned Dataset
+print("\nFINAL CLEANED DATASET")
+print(df) 
+
+# Output:
+ORIGINAL DATASET
     Name   Age  Marks         City
 0   Ravi  23.0   85.0    Hyderabad
 1   Sita   NaN   90.0   Vijayawada
 2  Kiran  21.0    NaN         None
 3   Ravi  23.0   85.0    Hyderabad
 4   None  25.0   95.0      Chennai
+
+DATASET SHAPE
+(5, 4)
 
 MISSING VALUES
     Name    Age  Marks   City
@@ -85,11 +111,22 @@ dtype: int64
 
 AFTER HANDLING MISSING VALUES
       Name   Age  Marks         City
-0     Ravi  23.0   85.0    Hyderabad
-1     Sita  23.0   90.0   Vijayawada
-2    Kiran  21.0    0.0      Unknown
-3     Ravi  23.0   85.0    Hyderabad
-4  Unknown  25.0   95.0      Chennai
+0     Ravi  23.0  85.00    Hyderabad
+1     Sita  23.0  90.00   Vijayawada
+2    Kiran  21.0  88.75      Unknown
+3     Ravi  23.0  85.00    Hyderabad
+4  Unknown  25.0  95.00      Chennai
+
+STATISTICAL SUMMARY
+             Age      Marks
+count   5.000000   5.000000
+mean   23.000000  88.750000
+std     1.414214   4.145781
+min    21.000000  85.000000
+25%    23.000000  85.000000
+50%    23.000000  88.750000
+75%    23.000000  90.000000
+max    25.000000  95.000000
 
 DATA TYPES BEFORE CONVERSION
 Name      object
@@ -113,16 +150,23 @@ DUPLICATE ROWS
 4    False
 dtype: bool
 
+DUPLICATE RECORDS
+   Name  Age  Marks       City
+3  Ravi   23     85  Hyderabad
+
 AFTER REMOVING DUPLICATES
       Name  Age  Marks         City
 0     Ravi   23     85    Hyderabad
 1     Sita   23     90   Vijayawada
-2    Kiran   21      0      Unknown
+2    Kiran   21     88      Unknown
 4  Unknown   25     95      Chennai
+
+FINAL DATASET SHAPE
+(4, 4)
 
 FINAL CLEANED DATASET
       Name  Age  Marks         City
 0     Ravi   23     85    Hyderabad
 1     Sita   23     90   Vijayawada
-2    Kiran   21      0      Unknown
+2    Kiran   21     88      Unknown
 4  Unknown   25     95      Chennai
