@@ -185,6 +185,8 @@ df.to_csv("cleaned_data.csv", index=False)
 
 ---
 
+# Project Visualizations
+
 ## Data Cleaning Cycle
 
 ![Data Cleaning Cycle](images/data_cleaning_cycle.png)
