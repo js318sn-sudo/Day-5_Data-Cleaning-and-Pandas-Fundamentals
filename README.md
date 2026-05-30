@@ -189,15 +189,15 @@ df.to_csv("cleaned_data.csv", index=False)
 
 ## Data Cleaning Cycle
 
-![Data Cleaning Cycle](images/data_cleaning_cycle.png)
+![Data Cleaning Cycle](data_cleaning_cycle.png)
 
 ## Data Cleaning Steps
 
-![Data Cleaning Steps](images/data_cleaning_steps.png)
+![Data Cleaning Steps](data_cleaning_steps.png)
 
 ## Data Cleaning Workflow
 
-![Data Cleaning Workflow](images/data_cleaning_workflow.png)
+![Data Cleaning Workflow](data_cleaning_workflow.png)
 
 
 # Conclusion
