@@ -1,0 +1,40 @@
+Data Visualization
+
+The project includes visual representations of the data cleaning process to demonstrate how raw data is transformed into a clean, accurate, and structured dataset.
+
+Visualizations Included:
+
+1. Data Cleaning Cycle
+   - Collect Data
+   - Inspect Data
+   - Clean Data
+   - Validate Data
+   - Analyze Data
+   - Repeat Process
+
+2. Data Cleaning Steps
+   - Identify Missing Values
+   - Remove Duplicates
+   - Correct Data Types
+   - Handle Outliers
+   - Fix Inconsistent Data
+   - Prepare Clean Dataset
+
+3. Data Cleaning Workflow
+   - Raw Data Collection
+   - Data Inspection
+   - Data Cleaning
+   - Data Transformation
+   - Data Validation
+   - Clean Data Output
+
+Purpose:
+
+- Understand the complete data cleaning process.
+- Visualize the cycle, steps, and workflow of data preparation.
+- Improve data quality and consistency.
+- Prepare reliable data for analysis and decision-making.
+
+Conclusion:
+
+The Data Cleaning Cycle, Steps, and Workflow visualizations provide a clear overview of how raw data is processed and transformed into a clean, structured, and analysis-ready dataset.
