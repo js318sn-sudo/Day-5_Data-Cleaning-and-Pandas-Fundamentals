@@ -185,6 +185,18 @@ df.to_csv("cleaned_data.csv", index=False)
 
 ---
 
+
+## Project Structure
+
+data-cleaning-and-pandas-fundamentals/
+│
+├── README.md
+├── data_cleaning_pandas.py
+├── sample_data.csv
+├── cleaned_data.csv
+└── requirements.txt
+
+
 # Project Visualizations
 
 ## Data Cleaning Cycle
@@ -198,6 +210,17 @@ df.to_csv("cleaned_data.csv", index=False)
 ## Data Cleaning Workflow
 
 ![Data Cleaning Workflow](data_cleaning_workflow.png)
+
+
+# Insights
+
+* Missing values were successfully identified and handled.
+* Dataset quality improved after cleaning operations.
+* Duplicate records were detected and removed.
+* Data types were checked and converted where necessary.
+* Filtering helped extract specific records from the dataset.
+* Sorting organized the data for easier analysis.
+* Cleaned data was saved for future use and analysis.
 
 
 # Conclusion
